@@ -1,1 +1,118 @@
-/* место для вашего кода */
+/* Базовые стили */
+body {
+  font-family: 'Raleway', sans-serif;
+  background-color: #fff;
+  color: #000;
+}
+
+/* Шапка */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+}
+
+.header__menu ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.header__link {
+  text-decoration: none;
+  color: #000;
+}
+
+.header__link_active {
+  text-decoration: none;
+  cursor: default;
+}
+
+.header__logo {
+  width: 148px;
+  display: block;
+}
+
+.header__logo-image {
+  width: 100%;
+}
+
+/* Обложка */
+.cover {
+  position: relative;
+  background-image: url('../images/cover.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 757px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 50px;
+  color: #fff;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.cover__title,
+.cover__description {
+  position: relative;
+  z-index: 2;
+}
+
+.cover__title {
+  font-size: 100px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.aligned-text,
+.aligned-text_center,
+.aligned-text_right {
+  display: block;
+}
+
+.aligned-text_center {
+  text-align: center;
+}
+
+.aligned-text_right {
+  text-align: right;
+}
+
+.cover__description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cover__description-text {
+  font-size: 22px;
+  text-transform: uppercase;
+}
+
+.bet-button {
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.bet-button:hover {
+  background: #fff;
+  color: #000;
+}
